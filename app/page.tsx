@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Page() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ export default function Page() {
             {/* Header */}
             <header className="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-sm">
                 <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <a href="/" className="text-2xl font-bold text-blue-400">
+                    <Link href="/" className="text-2xl font-bold text-blue-400">
                         Rebuild<span className="text-white">IT</span>
-                    </a>
+                    </Link>
                     
                     <div className="hidden md:flex space-x-8">
                         <a href="#services" className="hover:text-blue-400 transition-colors">Serviços</a>
