@@ -1,12 +1,5 @@
 # Onlook Starter Template
 
-<p align="center">
-  <img src="app/favicon.ico" />
-</p>
-
-
-## Getting Started
-
 First, run the development server:
 
 ```bash
