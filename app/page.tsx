@@ -8,16 +8,16 @@ export default function Page() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
             {/* Header */}
-            <header className="relative z-50">
+            <header className="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-sm">
                 <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <div className="text-2xl font-bold text-blue-400">
+                    <a href="/" className="text-2xl font-bold text-blue-400">
                         Rebuild<span className="text-white">IT</span>
-                    </div>
+                    </a>
                     
                     <div className="hidden md:flex space-x-8">
                         <a href="#services" className="hover:text-blue-400 transition-colors">Serviços</a>
                         <a href="#about" className="hover:text-blue-400 transition-colors">Sobre</a>
-                        <a href="#contact" className="hover:text-blue-400 transition-colors">Contato</a>
+                        <a href="https://automation.aimentory.com.br/form/ed448c19-60a8-446e-b5de-096c6cef742b" className="hover:text-blue-400 transition-colors">Contato</a>
                     </div>
 
                     <button 
@@ -38,7 +38,7 @@ export default function Page() {
                         <div className="container mx-auto px-6 py-4 space-y-4">
                             <a href="#services" className="block hover:text-blue-400 transition-colors">Serviços</a>
                             <a href="#about" className="block hover:text-blue-400 transition-colors">Sobre</a>
-                            <a href="#contact" className="block hover:text-blue-400 transition-colors">Contato</a>
+                            <a href="https://automation.aimentory.com.br/form/ed448c19-60a8-446e-b5de-096c6cef742b" className="block hover:text-blue-400 transition-colors">Contato</a>
                         </div>
                     </div>
                 )}
@@ -57,12 +57,12 @@ export default function Page() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
+                        <a href="https://automation.aimentory.com.br/form/ed448c19-60a8-446e-b5de-096c6cef742b" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
                             Solicitar Consultoria
-                        </button>
-                        <button className="px-8 py-4 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white rounded-lg text-lg font-semibold transition-all">
+                        </a>
+                        <a href="#services" className="px-8 py-4 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white rounded-lg text-lg font-semibold transition-all">
                             Conhecer Serviços
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -114,6 +114,45 @@ export default function Page() {
                                 <li>• Plano de correções</li>
                             </ul>
                         </div>
+
+                        {/* AI Automation */}
+                        <div className="bg-slate-700/50 p-8 rounded-xl border border-slate-600 hover:border-blue-500 transition-all">
+                            <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4">Automação com IA</h3>
+                            <p className="text-slate-300 mb-6">
+                                Implementação de soluções de automação inteligente e IA para otimizar processos e reduzir custos.
+                            </p>
+                            <ul className="space-y-2 text-slate-400">
+                                <li>• Otimização de processos</li>
+                                <li>• Redução de custos</li>
+                                <li>• Implementação de IA</li>
+                                <li>• Integração de sistemas</li>
+                            </ul>
+                        </div>
+
+                        {/* Observability */}
+                        <div className="bg-slate-700/50 p-8 rounded-xl border border-slate-600 hover:border-blue-500 transition-all">
+                            <div className="w-16 h-16 bg-orange-600 rounded-lg flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-7-8a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4">Observabilidade</h3>
+                            <p className="text-slate-300 mb-6">
+                                Monitoramento proativo, análise de logs e métricas para garantir a saúde e performance de seus sistemas.
+                            </p>
+                            <ul className="space-y-2 text-slate-400">
+                                <li>• Monitoramento de infraestrutura</li>
+                                <li>• Análise de logs e métricas</li>
+                                <li>• Dashboards personalizados</li>
+                                <li>• Alertas e notificações</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -153,6 +192,23 @@ export default function Page() {
                 </div>
             </section>
 
+            {/* About Section */}
+            <section id="about" className="py-20 bg-slate-800/50">
+                <div className="container mx-auto px-6">
+                    <h2 className="text-4xl font-bold text-center mb-16">
+                        Sobre a <span className="text-blue-400">Rebuild IT</span>
+                    </h2>
+                    <div className="max-w-4xl mx-auto text-center text-slate-300 text-lg">
+                        <p className="mb-4">
+                            A Rebuild IT é uma consultoria especializada em infraestrutura cloud e auditoria de conformidades, dedicada a ajudar empresas a otimizar suas operações e garantir a segurança de seus dados. Com uma equipe de especialistas altamente qualificados e anos de experiência no mercado, oferecemos soluções personalizadas que impulsionam a inovação e a eficiência.
+                        </p>
+                        <p>
+                            Nosso compromisso é com a excelência tecnológica e a satisfação total de nossos clientes. Acreditamos que uma infraestrutura robusta e em conformidade é a base para o sucesso no ambiente digital atual.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600">
                 <div className="container mx-auto px-6 text-center">
@@ -162,9 +218,9 @@ export default function Page() {
                     <p className="text-xl mb-8 text-blue-100">
                         Entre em contato conosco e descubra como podemos ajudar sua empresa
                     </p>
-                    <button className="px-10 py-4 bg-white text-blue-600 rounded-lg text-lg font-bold hover:bg-gray-100 transition-all transform hover:scale-105">
+                    <a href="https://automation.aimentory.com.br/form/ed448c19-60a8-446e-b5de-096c6cef742b" className="px-10 py-4 bg-white text-blue-600 rounded-lg text-lg font-bold hover:bg-gray-100 transition-all transform hover:scale-105">
                         Falar com Especialista
-                    </button>
+                    </a>
                 </div>
             </section>
 
@@ -185,8 +241,7 @@ export default function Page() {
                             <h4 className="text-lg font-bold mb-4">Contato</h4>
                             <div className="space-y-2 text-slate-400">
                                 <p>contato@rebuildit.com.br</p>
-                                <p>(11) 9999-9999</p>
-                                <p>São Paulo, SP</p>
+                                <p>Rio de Janeiro, RJ</p>
                             </div>
                         </div>
 
@@ -195,6 +250,8 @@ export default function Page() {
                             <div className="space-y-2 text-slate-400">
                                 <p>Infraestrutura Cloud</p>
                                 <p>Scan de Conformidades</p>
+                                <p>Automação com IA</p>
+                                <p>Observabilidade</p>
                                 <p>Consultoria Técnica</p>
                                 <p>Suporte 24/7</p>
                             </div>
